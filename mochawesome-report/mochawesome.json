@@ -1,0 +1,157 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-05-11T01:41:38.894Z",
+    "end": "2026-05-11T01:41:38.898Z",
+    "duration": 4,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9e22a68d-7593-4788-a729-6cec8ccf69d9",
+      "title": "",
+      "fullFile": "C:\\Users\\naty_\\OneDrive\\Documentos\\MBA\\desafio-programacao2\\test\\realizarLogin.test.js",
+      "file": "\\test\\realizarLogin.test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "46082e13-0762-4b68-9e19-39d1a79213ae",
+          "title": "Validações de Login",
+          "fullFile": "C:\\Users\\naty_\\OneDrive\\Documentos\\MBA\\desafio-programacao2\\test\\realizarLogin.test.js",
+          "file": "\\test\\realizarLogin.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "1) Sucesso",
+              "fullTitle": "Validações de Login 1) Sucesso",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//arrange\nconst email = 'nathalia.silva@teste.com';\nconst senha = 123456;\n//act\nconst login = realizarLogin(email, senha);\n//assert\nassert.equal(login, 'login foi realizado com sucesso');",
+              "err": {},
+              "uuid": "51154565-a864-4c83-ad0f-9fbe30caecba",
+              "parentUUID": "46082e13-0762-4b68-9e19-39d1a79213ae",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "2) Credencial expirada",
+              "fullTitle": "Validações de Login 2) Credencial expirada",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//arrange\nconst email = 'rubens.silva@teste.com';\nconst senha = 'teste';\n//act\nconst login = realizarLogin(email, senha);\n//assert\nassert.equal(login, 'credenciais expiraram');",
+              "err": {},
+              "uuid": "22a07aef-54e0-4a88-b967-863f9351a530",
+              "parentUUID": "46082e13-0762-4b68-9e19-39d1a79213ae",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "3) Usuario não encontrado",
+              "fullTitle": "Validações de Login 3) Usuario não encontrado",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//arrange\nconst email = 'tiago.silva@teste.com';\nconst senha = 'teste123';\n//act\nconst login = realizarLogin(email, senha);\n//assert\nassert.equal(login, 'usuário não encontrado');",
+              "err": {},
+              "uuid": "2c08aacb-45d5-443b-b950-1677506c6cec",
+              "parentUUID": "46082e13-0762-4b68-9e19-39d1a79213ae",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "4) Senha incorreta para o usuário encontrado",
+              "fullTitle": "Validações de Login 4) Senha incorreta para o usuário encontrado",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//arrange\nconst email = 'jose.silva@teste.com';\nconst senha = 'teste123';\n//act\nconst login = realizarLogin(email, senha);\n//assert\nassert.equal(login, 'credenciais estão incorretas');",
+              "err": {},
+              "uuid": "e619bcf2-2c51-458b-b26b-104e0a5a921c",
+              "parentUUID": "46082e13-0762-4b68-9e19-39d1a79213ae",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "51154565-a864-4c83-ad0f-9fbe30caecba",
+            "22a07aef-54e0-4a88-b967-863f9351a530",
+            "2c08aacb-45d5-443b-b950-1677506c6cec",
+            "e619bcf2-2c51-458b-b26b-104e0a5a921c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "11.7.5"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.3.2"
+    }
+  }
+}
